@@ -41,5 +41,8 @@ http://stackoverflow.com/questions/16336367/what-is-the-difference-between-synch
 What are some benefits and disadvantages of async?
 
 ```md
-Some benefits of using async are that the processing time for scripts is decreased via allowing tasks to run concurrently, and the css can be run earlier.  Disadvantages include that the order in which scripts are executed can't be controlled which creates issues if files are dependant on each other to run as intended and potentially limits a developer's vision for how code should execute.  
+Some benefits of using async are that the processing time for scripts is decreased via allowing tasks to run concurrently, and the css can be run earlier.  Disadvantages include that the order in which scripts are executed can't be controlled which creates issues if files are dependant on each other to run as intended and potentially limits a developer's vision for how code should execute.
+
+(Source:
+https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/july/what-are-the-benefits-and-drawbacks-of-loading-javascript-asynchronously/)  
 ```
