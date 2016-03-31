@@ -18,17 +18,17 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+it's kind of like a stack that calls functions as we go through it.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+sync handles events at the same time, async has some way of prioritizing what to do first.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+I would be guessing at this answer. I've read it, but I need to see it in practice.
 ```
