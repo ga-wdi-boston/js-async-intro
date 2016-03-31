@@ -18,17 +18,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+Because JS can run only one line of code at a time, it processes requests in the order it receives them. When an event has a settimer or a funtion that requires reading from another or something else considered 'blocking', it essentially holds up the line the for the next call to get processed. When a call is made, if a callback function is used, JS can execute the function, but execute the callback function at a later time, which means it can continue on processing the next the lines of the code. The event loops comes into play when all of the lines of code in the call log are complete, the function that was called previously in the callback can excecute.
+
+
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync means calls are processed in the order received.
+Async means it can initiate/trigger a call but execute at a later time. So the output of a call third in a seven lines of code may not executed until after seven completes.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The benefit is that your browser is not held up by tasks that are time consuming and can to move on to the next ones.
+A disadvantage would be that additional codes/checks are needed if you need data to process and complete in a particular order.
 ```
