@@ -18,17 +18,27 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop searches for tasks in a queue to execute from callback functions
+read earlier, going through the single thread processing of JS.  It takes these
+events and puts them on the Call Stack to have their code executed.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Synchronous functions must complete in their entirety before the single thread
+processing of JS can move on through the code, while asynchronous functions are
+read, and then put into the Callback queue to be executed at a later time.  It is
+important to use async for time/processing intensive functions, so that a user can
+continue to smoothly interact with the browser.  Sync functions will freeze their
+browser until the functions are complete.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async allows for a smooth and fluid UI/broswer expereience for users, however it
+can be disadvantageous if other functions depend on an async function's output,
+since the function calling the async function will not be able to complete since
+output is produced later on or at the end of all other CallStack operations.
 ```
