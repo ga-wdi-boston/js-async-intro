@@ -18,17 +18,19 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop passes events(?) between the task queue and the event stack. It looks at the event stack, and if it is empty, passes the first thing in the event queue.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync means events are processed in the order they appear, one at a time.  Async means
+events can be initiated and processed independently.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async can create better performance because other processes like creating the DOM can occur while
+Javascript is loading. But you lose control over when Javascript files are executed, since they execute as soon as they're loaded, which can cause a problem if some of those files depend on each other.
 ```
