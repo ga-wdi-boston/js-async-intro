@@ -18,17 +18,16 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loops is how JS divide up task bw/e the browser and the stack
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+syn is when commands are executed one by one in order and asyn is when some code is delayed by being put into queue
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
-```
+async is beneficial in that it creates a fluid ui  ```
