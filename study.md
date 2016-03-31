@@ -18,17 +18,17 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop checks both the stack and the task queue and whenever the stack is empty, it pushes the task from the front of the queue to the stack. This means that asynchronous events will only occur when your code has finished running.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync means that events happen in order, one after another in the order they were called. Async means that events can be processed elsewhere and occur once completed, not necessarily in the order in which they were called.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+An advantage is that time consuming processing doesn't have to lock up the browser until it's complete. A disadvantage is that it's more difficult to determine when various events will be complete and you can use the results of those events.
 ```
