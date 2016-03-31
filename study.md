@@ -18,17 +18,28 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop in Javascript checks for when the call stack is clear and then pushes the first callback
+in the task cue to the stack.
+souce: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync processes happen one after the other in the order you wrote in your code.
+Async processes run callback functions in the background while the rest of the
+code completes, rendering once the other code has completed and the call stack is clear.
+source: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async makes for a more seamless UI since the user is not waiting for each process
+to finish before the next one starts. It allows access to resources that are slower
+to respond without disrupting the rest of the script. The disadvantage of async
+is that it's less intuitive in what order your code will run; it is also not
+supported by a few older browsers such as IE 8/9.
+sources: https://www.youtube.com/watch?v=8aGhZQkoFbQ, https://www.codeschool.com/blog/2014/10/30/understanding-node-js/,
+https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/
 ```
