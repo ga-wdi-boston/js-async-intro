@@ -18,17 +18,19 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop evokes the callback in the non-blocking JavaScript code. When a non-blocking
+I/O call finishes it emits an event. After the event is emitted, a callback function is performed.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Asynch occurs in the background and synchronous lets your call finish.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
-```
++You can navigate to other pages or interact with pages.
++Faster response time.
+-Can increase development time```
