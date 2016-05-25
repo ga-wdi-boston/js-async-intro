@@ -32,6 +32,7 @@ In your own words, describe the difference between sync and async:
 <!-- your answer here -->
 - sync : running code from the task queue one after the other
 - async : making use of the event loop and handling several requests at a time
+
 ```
 
 What are some benefits and disadvantages of async?
