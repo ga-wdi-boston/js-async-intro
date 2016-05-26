@@ -18,17 +18,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop takes callbacks and puts them in the stack once it has been cleared.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+If code is run synchronously it can only run one piece of code in runtime, code that runs
+asynchronously is able to queue things like ajax calls/timeouts, while still executing
+code in runtime
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+You can queue up tasks that will take longer which will allow of better performance
+and rendering.  It is more complicated to keep track and manage the concurrent code
+being run.
 ```
