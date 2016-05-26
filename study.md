@@ -18,17 +18,19 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+<!-- An event loop is when you have a callback quene heap and other objects and functions
+that are all running together in a loop -->
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+<!-- Sync mean at the same time and async means it happens at different time. -->
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- Benefits is you can stack functions in an order and have them run in a specific fashion.
+Disadvantages is when you need multiple things to run simultaneously and are not able to.-->
 ```
