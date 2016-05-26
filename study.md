@@ -18,17 +18,24 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is sort of like a parallel processing stack that recieves code
+from the main stack to be executed later. When the required conditions are met,
+the code is executed and then removed from the event loop.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync processes requests in order before proceeding to the next executable code,
+possibly leading to hangups. Async has the event loop that can 'store' running
+code or functions listening for events in order to allow later code to be
+processed.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async better for transmissions that occur at irregular intervals, and is more
+simple to set up than sycn, but has a large 'overhead', where a lot of the
+information only stands for controlling purposes.
 ```
