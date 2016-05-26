@@ -18,17 +18,14 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
-```
+The event loop is something that looks at the task queue and the stack and puts the queue onto the stack.```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
-```
+Sync code is performed at the same time, meaning it processes tasks one at a time from the stack. async means that more than one process can occur, or 2 processes are relagated to different parsers.```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
-```
+A benefit from async is that it bypasses a step, in a way, as it can operate on stacks while something at the bottom of the stack takes a long time to process. Async gets processes to the api and queue quicker than sync. A disadvantage to asynch is that is is not streamlined across languages and browsers to there is a disconnect in the req response cycle. ```
