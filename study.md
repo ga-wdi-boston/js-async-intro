@@ -17,18 +17,22 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 In your own words, describe the event loop and how it works?
 
-```md
-<!-- your answer here -->
-```
+```md an event loop takes a funciton from the call stack and moves to the event
+stack where it waits/listens for the event to occur. When it does, it adds the
+result to the event queue, which waits until the stack is clear to add the
+function result to it.
+source (http://altitudelabs.com/blog/what-is-the-javascript-event-loop/)```
 
 In your own words, describe the difference between sync and async:
 
-```md
-<!-- your answer here -->
-```
+```md asyc allows for requests that have not completed to be 'stored' and queued
+not directly on the stack, making it possible to move onto the next task. sync
+requires every task to be completed in order of being called.
+source (https://www.youtube.com/watch?v=8aGhZQkoFbQ) ```
 
 What are some benefits and disadvantages of async?
 
-```md
-<!-- your answer here -->
-```
+```md async will let you continue to run code while you're waiting, but that has
+the side effect of letting things run 'out of order', maybe in a way you weren't
+expecting.
+source (https://www.codeschool.com/blog/2014/10/30/understanding-node-js/)```
