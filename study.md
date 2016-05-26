@@ -17,18 +17,20 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 In your own words, describe the event loop and how it works?
 
-```md
-<!-- your answer here -->
-```
+It hangs out and then reacts to events
+
 
 In your own words, describe the difference between sync and async:
 
-```md
-<!-- your answer here -->
-```
+When you do something synchronously you wait for it to finish before moving on to another task. When you execute something asynchronously you move on to another task before it's finished
 
 What are some benefits and disadvantages of async?
 
-```md
-<!-- your answer here -->
-```
+benefits:
+no blocking
+requests don't need specific server
+
+disadvantages:
+crazy response times (unpredictable)
+more difficult to design apps
+increased difficulty with error handling
