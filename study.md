@@ -19,9 +19,9 @@ In your own words, describe the event loop and how it works?
 
 ```md
 <!-- your answer here -->
-The event loop is responsible to look at the stack and the webapis task queue. Every time the the stack is empty it hands the new task from the top of the queue. and put its on the stack (that will make the code actually run).
+The event loop is responsible to look at the stack and the webapis task queue. Every time the the stack is empty it hands the new task from the top of the queue and put its on the stack (that will make the code actually run).
 
-If something needs to b handled by an web the event loop will send this block of code to the webapi and clear therefore the stack. Now a new thing can be operated at the stack and the webapi is handling it’s request at the same time. Nothing gets blocked. Once the webapi is ready it will send its answer back to the task queue. From there it will get hardened from the vent loop back to the stack once the stack clears.
+If something needs to be handled by an web the event loop will send this block of code to the webapi and clear therefore the stack. Now a new thing can be operated at the stack and the webapi is handling it’s request at the same time. Nothing gets blocked. Once the webapi is ready it will send its answer back to the task queue. From there it will get hardened from the vent loop back to the stack once the stack clears.
 
 The stack can only handle one thing at the time, but through the event loop things can happen at the same time, also called async.
 ```
@@ -39,10 +39,12 @@ What are some benefits and disadvantages of async?
 
 ```md
 <!-- your answer here -->
-Sync: can block the bowser, meaning that the user can’t click anything while the server is processing a request. Leads to slow webpages, that nobody likes.
+Sync:
+- can block the browser, meaning that the user can’t click anything while the server is processing a request. - Leads to slow webpages, that nobody likes.
 
 Async:
-you end up with a lot of callbacks. Code can start looking not very clean compared to Phyton that sues sync.
+- you end up with a lot of callbacks. Code can start looking not very clean compared to Phyton that uses sync.
+- code gets very complex
 
 Source: https://www.quora.com/What-are-the-disadvantages-of-using-Node-js
 ```
