@@ -18,17 +18,20 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is the process through which code is executed.  First, a function is initialized and will either go to the stack for processing or it will go to the web api for processing.  Once processing is completed, the messages from the code will go to the message queue to be processed.  Messages can only be processed once at a time, so the queue can contain many messages that are waiting to be processed.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+With sync, a process must be completed before another task can be run, so all processes are halted until the current process is finished.  With async, processes can be run at the same time and do not need to wait for one another to be completed before the next process is begun.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Some benefits of async are that numerous function calls can be run at one time.  So, you don't have to wait for one process to end before another begins.  A disadvantage can be that you can't control the order in which code get executed.
+
+https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/july/what-are-the-benefits-and-drawbacks-of-loading-javascript-asynchronously/
+
 ```
