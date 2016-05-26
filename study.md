@@ -18,7 +18,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- An event loop is when you have a callback quene heap and other objects and functions
+<!-- An event loop is whe n you have a callback quene heap and other objects and functions
 that are all running together in a loop -->
 ```
 
@@ -32,5 +32,5 @@ What are some benefits and disadvantages of async?
 
 ```md
 <!-- Benefits is you can stack functions in an order and have them run in a specific fashion.
-Disadvantages is when you need multiple things to run simultaneously and are not able to.-->
+Disadvantages is when you need multiple things to run simultaneously and are not able to. -->
 ```
