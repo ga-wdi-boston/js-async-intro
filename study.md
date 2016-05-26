@@ -18,17 +18,35 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop moves the task at the front of the queue to the stack when
+it sees that the stack is empty and the queue is not. It is how a asynchronous
+callback function ends up back on the stack once it returns from the web API.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+sync runs on the stack, one at a time, so it blocks the stack e.g. if it is slow, nothing else
+can happen. This is especially bad because it will block the event loop, which
+is what moves the screen renders from the queue to the stack, which means that
+the page won't actually look like it updates at all while the long thing is
+running.
+
+Asynch means that something is running in some web API and that can be happening
+in parallel to the stack, so it doesn't block the stack or event loop. This is
+important for potentially slow things, like network requests. It will end up back
+in the stack once it gets to the front of the callback queue and the event loop
+puts it on the stack (when the stack is empty).
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The key benefit, as described above are that slow-running code can be used
+without blocking the stack.
+
+A disadvantage is that if you queue something that takes a long time, at least
+in a single-threaded language like JS, you will block the event loop and nothing
+else can happen. I think this would still happen in a synchronous function
+though, so I am not sure if it is really worse.
 ```
