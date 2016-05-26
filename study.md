@@ -18,17 +18,23 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop handles queueing asynchronous callbacks onto the stack whenever
+the stack is free to process another function.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+a sync function process the code one line at a time, and doesn't move on until 
+it has finished what its currently processing.  Async code can defer certain
+functions, like callbacks, and continue processing the code until its done, then
+the event loop feeds the callbacks that were deferred back into the stack.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Instead of having to wait for a callback that might take a while to process to
+finish, it can push the longer callback to the queue and continue to process the code,
+returning to the callback once its finished its other pending tasks.
 ```
