@@ -18,17 +18,25 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is what "listens"/"looks" for an asynchronous request to be
+finished and have returned a value, so that it can push that value/associated
+callback into the regular stack to be run.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync means that functions run in order, one after another. One can only begin
+after the previous one. But async means that multiple things can be running at once.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The obvious benefit of async is that the code can be more efficient, in some ways.
+If a piece of information has to be found, the entire program doesn't need to stop
+running and wait for that info to be found. It can keep running other things, and then
+deal with the code once its actually found. I think the benefits mostly outweigh
+the disadvantages, but one disadvantage of async is that it's more complex. You won't
+always know exactly when a piece of code is going to run.
 ```
