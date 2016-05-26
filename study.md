@@ -18,17 +18,17 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop plays a part in asynchronous request processing.  It seems to orchestrate requests being sent to the server and listeneing to an event being fired back from the server once the response is ready to be sent back to client.  
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Async is processing that allows other processing to continue before one request has ended.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async is advantageous because it allows for multiple requests to be processed and allows for faster outputs to be given in a series of input/output exchanges.  Disadvantegous, or as gather from the reading, open up applications to potential resource conflicts and associate failure.  (wikipedia.org/asynchronousI/O)
 ```
