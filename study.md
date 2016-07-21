@@ -18,17 +18,22 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+event loop is to store the callback function and excute it when the event is ready.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+sync means you can not excute another task before current task finishes.
+async means you can excute another task before current task finishes.
+
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+benefits: when using async, the process will be executed more efficiently. and even one task is failed, the others can still work.
+disadvantage: you can not guarantee the order of the task executed.
+
+-  https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/july/what-are-the-benefits-and-drawbacks-of-loading-javascript-asynchronously/
 ```
