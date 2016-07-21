@@ -20,7 +20,8 @@ In your own words, describe the event loop and how it works?
 ```md
 <!-- The event loop is a processing manager. If there is something the task queue
 it will check the stack, and if the stack is empty is will pull something from the queue
-and push it to the stack. -->
+and push it to the stack.
+source: https://www.youtube.com/watch?v=8aGhZQkoFbQ -->
 ```
 
 In your own words, describe the difference between sync and async:
@@ -28,7 +29,8 @@ In your own words, describe the difference between sync and async:
 ```md
 <!-- Sync means that the code executes all at once. While async means that functions
 get pushed to the api and once complete, get pushed to the queue and if the stack is
-empty then code from the queue gets pushed to the stack. -->
+empty then code from the queue gets pushed to the stack.
+source: https://www.youtube.com/watch?v=8aGhZQkoFbQ -->
 ```
 
 What are some benefits and disadvantages of async?
@@ -37,5 +39,6 @@ What are some benefits and disadvantages of async?
 <!-- the benefits of async are that it allows the browser to render the screen inbetween
 code instead of freezing the screen until the stack is empty.
 The disadvantages of async are that it overall takes longer to execute code that if it were
-sync b/c you need to wait for the stack to be empty before the async code can execute. -->
+sync b/c you need to wait for the stack to be empty before the async code can execute.
+source: https://www.youtube.com/watch?v=8aGhZQkoFbQ -->
 ```
