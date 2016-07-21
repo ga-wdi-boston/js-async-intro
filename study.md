@@ -18,17 +18,18 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is the process and order an events go through when they have been activated
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+async allows multiple events to be done simultaneously and sync will complete events one at a time
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+the benefit is that it allow for a faster page. there doesn't seem to be a lot of
+complaints regarding async.
 ```
