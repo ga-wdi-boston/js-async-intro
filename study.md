@@ -18,17 +18,29 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+https://nodesource.com/blog/understanding-the-nodejs-event-loop/
+
+From my understanding, the event loop is what is dealing with all of the javascript.
+When an asynchronous code is sent to the API and gets what's requested, it is then sent
+to the queue waiting for the stack to clear.  Once the stack clears the event loop then brings this javascript into the stack.
+
+I'm probably wrong about this.
+
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+http://rowanmanning.com/posts/javascript-for-beginners-async/
+
+Synchronous code will read in a sequence, line by line; each line isn't executed until the one before it finishes. This can cause slow and sometimes painfully long rendering time. Asynchronous code will bring statements outside of the main program flow, which allows other code to be read while it is recieving the requested pages; making it have
+a faster rendering time.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The obvious benefit is that it can make for a better user experience by lessening
+the amount of rendering (or speeding up the page).  Too much asynchronous code can
+actually lead to less performance and more complex code.
 ```
