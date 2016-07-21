@@ -18,17 +18,33 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop listens for processing passed off to APIs to return their event,
+and adds them back to the stack to run.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync requires the current processing to finish before moving on to the next,
+blocking all other code from running.
+
+Async allows the current processing to be moved off of the stack until it
+returns its result, allowing other code to run.
+
+In addition to the readings, I ready the Wikipedia page for Asynchronous I/O.
+
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async allows applications to run faster by not stopping to wait for each process
+to finish before working on something else.
+
+The downside to async is that you can't guarantee the order Javascript files
+are executed in. This means that if multiple scripts rely on eachother, and they
+run out of order, your program may not do what you expect it too or just not work
+at all.
+
+
 ```
