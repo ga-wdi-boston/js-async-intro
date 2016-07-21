@@ -18,17 +18,25 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is a way of evoking the callback function. It does this by using
+the same ready function we use when making sure HTML is ready for JQuery. 
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Async and sync are two  different ways of handling functions and event loops.
+Async steps through each step as it completed and cannot move onto the next step
+until the previously one is done. Sync allows all these steps to be done at the
+same time, which allows them to all be sent through at the same time.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Sync is good for things which are time sensative, material which you want to be
+completed at the same time and sent at once. Async is good for material that
+depend on each other and their result, therefore they rely on the previos action
+before they know what to do with the information at hand. They need that
+information to complete the task.
 ```
