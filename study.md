@@ -18,7 +18,15 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is a part of the browser machinery that decides when functions
+from the callback queue are allowed to run. It's like a smart little revolving
+door that only lets a callback function onto the stack (where it will be
+allowed to actually execute and do its thing) if the stack is empty.
+
+In conjunction with other tools that push functions into the callback
+queue (instead of putting them directly onto the stack), the event loop allows
+the browser to delay the execution of (possibly) slow functions until faster
+functions have already finished executing.
 ```
 
 In your own words, describe the difference between sync and async:
