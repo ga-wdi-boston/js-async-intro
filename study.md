@@ -18,17 +18,17 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is a means of integrating events that have been passed to another handler back into the stack.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync means that you can have multiple things working at once, asynch means that an event needs to wait for the previous event to end before it can start.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The benefit of async is that you have a clear pattern of events that are happening, however you have a trade off that events can block other events from happening and slow down processes by doing this.
 ```
