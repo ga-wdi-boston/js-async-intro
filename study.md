@@ -16,19 +16,29 @@ material. Instead, digest what you've read and repeat it in your own voice.
 ## Event Loop?
 
 In your own words, describe the event loop and how it works?
-
 ```md
-<!-- your answer here -->
+
+<!-- The event loop is used in order to push callback functions into the task queue -->
+<!-- when the stack is empty, as a result other code can be executed without  -->
+<!-- holding up things.  -->
+
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+<!-- Synchronous code has to be executed
+in order,
+Asynchronous code can be executed "out of order,". Tasks can run simultaneously.
+Speeding up the rendering process.
+ -->
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- An advantage of using async are the time you save if rendering
+large quantities of code. A disadvantage of asynchronous programming is that
+it is easy to make mistakes on how things work and is it is easy to make errors.
+
 ```
