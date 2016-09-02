@@ -13,22 +13,30 @@ material. Instead, digest what you've read and repeat it in your own voice.
 -   [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 -   [The Restaurant](https://www.codeschool.com/blog/2014/10/30/understanding-node-js/)
 
-## Event Loop?
+## Event Loop
 
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+  The event loop is the means by which asynchronous functions get passed into
+  the call stack from the queue.  If the event loop can see the call stack is
+  empty, it add the code in the first position of the task queue to the stack.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+ Sync only executes one operation at a time in in a specific order.  Async
+ functions are first sent to a web api before being sent to the call queue, and
+ are processed concurrently to functions on the callback stack.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+ Benefits are running multiple processes at once and fewer hold ups.  It allows
+ you to send slower code to the api and leave just faster processes on the stack.
+ It also allows for the render of the page to happen more continuously and not
+ be blocked by a slow process.  Disadvantages include being expensive from a
+ memory stand-point.
 ```
