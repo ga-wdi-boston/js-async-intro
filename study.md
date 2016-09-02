@@ -18,17 +18,28 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is essentially javascript's way of running code quickly and
+efficiently. The use of callbacks in javascript allow for asynchronicity in
+processing in the browser. Code with shorter runtime (that does not require waiting for another function/information) to process, gets placed in the stack and is run. Code that takes longer can begin to be processed at the same time while it ways for other things to be processed, so it is placed in a queue until the stack clears. When the stack clears and the necessary information has been processed for the callback, that function can move into the stack to finish processing. The event loop is responsible for moving this code from the queue to the stack.
+
+source: video & https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Synchronous means that pieces of code can only be processed one at a time.
+Async means that multiple pieces of code can be processed at once.
+
+source: class notes.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Asynch is beneficial because it provides more seamless, clean, reuseable code, and may create less work for the developer. However, it can be difficult to find errors when they occur because there are usually functions embedded within functions and other
+complex code that is written. Sometimes, writing asynchronous code in itself can become complex and difficult to read.
+
+notes: class and this blog: http://www.html5rocks.com/en/tutorials/async/deferred/
 ```
