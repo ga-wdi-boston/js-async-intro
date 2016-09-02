@@ -19,16 +19,26 @@ In your own words, describe the event loop and how it works?
 
 ```md
 <!-- your answer here -->
+Everytime an event is fired it is added to a queue and waits for the action to
+be completed. Once it is done processing, it will return back to the event and wait
+for it to be initiated again.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
 <!-- your answer here -->
+For a sync loop we need to wait for a task or callback to finish before we can
+do another one. Asyn is the opposite where we can do other stuff while the task
+or event loop is running.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
 <!-- your answer here -->
+We are able to do more things at once with async callbacks because we do not need to
+wait for the task to finish before doing something else. This means the processing
+time will be faster. However, it is more complex than sync and requires more memory
+to run.
 ```
