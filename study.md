@@ -18,17 +18,15 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loops functions as a middleman between taskes sent by webAPIs, and the stack in javascript.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
-```
+Ansychronous code does not affect the jobs being put onto the stack, while synchronous code must wait for the stack to resolve before continuing, which can freeze a page's load. ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
-```
+Async can, like a kitchen, allow well-coordinated elements to finish at the time to provide the best experience. However, it makes the coordination of those elements, especially in regards to promises. ```
