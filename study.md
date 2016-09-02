@@ -18,17 +18,26 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is a way to asynchronously call functions contained in the same thread.
+If a function is moved out of the stack and in to the queue, it will not be run until the stack is free of functions to run. Once the stack has cleared, the que will begin to populate the stack again.
+(http://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/)
+(http://altitudelabs.com/blog/what-is-the-javascript-event-loop/)
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync is when all functions in a thread are run concurrently.
+Asynch is when functions are called out of order from other functions.
+Other functions are not dependent on the asynch functions' immediate completion.
+
+(http://rowanmanning.com/posts/javascript-for-beginners-async/)
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Asynch allows functions (that would normally take a long time to run) to run without impeding other functions required to have a functioning (ha ha) web app. These asynch functions can 'do their own thing' without slowing or stopping other elements in the browser.
+
+Asynch can cause a mess of recursive callback functions that endlessley trigger.
 ```
