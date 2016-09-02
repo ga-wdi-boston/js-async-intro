@@ -18,17 +18,22 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+An event loop stores requests and their callbacks. The way it works is by determining the order of such requests.
+
+source: readings provided
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+sync = server can process only one request at a time.
+async = the server can proccess multiple requests at a time without compromising the execution of others.
+
+source:  http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Benefits: async is obviously faster since it works requests do not need to be answered one by one. Disadvantages: we can obtain unpredictable responses or the whole process may or may not take longer.
 ```
