@@ -18,17 +18,37 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+JavaScript runtime performs other tasks while waiting for asynchronous
+operations and their callbacks to execute. Messages to be processed, along with
+their callback functions, are stored in a message queue. JavaScript runtime
+goes through the queue, finds the message(a click event, a function in said event,
+etc.), and executes the callback.
+http://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync: Client will get a callback only after the server receives AND processes
+the request to oad the JavaScript. It takes longer for the webpage to load because it stops DOM
+construction while the request is processed.
+Async: Client will get a callback after the server has received the request.
+The browser continues working normally while the request is processed. The
+DOM will continue to be constructed and thus the page will load more quickly.
+
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
+https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/july/what-are-the-benefits-and-drawbacks-of-loading-javascript-asynchronously/
 ```
 
 What are some benefits and disadvantages of async?
 
+
+
+
 ```md
-<!-- your answer here -->
+Benefits: Browser doesn't slow down while a request is being processed. DOM
+construction continues. It is more efficient.
+Drawbacks: There is no guarantee as to what order JavaScript files will be
+executed on the page. Sometimes different files are dependent on one another,
+and in this case sync is the better option.
 ```
