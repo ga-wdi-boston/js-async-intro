@@ -18,17 +18,20 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is where functions go to queue up to be fired.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+sync means that one piece of code will have to completely finish before the next
+piece fires. Async means that each will fire and finish at their own times.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+One of the main benefits is that you can make multiple requests to the server at the
+same time without waiting for each to finish. The downside is if the server gets stuck
+on one requests, it will get stuck infinitely. 
 ```
