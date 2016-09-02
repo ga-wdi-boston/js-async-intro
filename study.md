@@ -18,17 +18,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+Event loops work with a message queue to utilize asynchronously-fired callbacks, which in turn allows for multiple operations to be handled while waiting for an external event (e.g. a click). An event loop works by invoking a callback function once a return value from the respective I/O call is available.
+
+Additional resources:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+http://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync is where a program must stop while it waits for indiviual I/O operations to finish (e.g. response-request model). Async allows multiple I/O calls to be performed without stopping the entire process. In async, the calls run independently of one another.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages to using async include making an application run more efficiently and being simple enough for JS programmers to understand and use. However, async can only process one request at a time (a.k.a. single-threaded). A disadvantage to this is that if the program hits a very time-consuming function or an infinite loop, the entire process can still get blocked.
 ```
