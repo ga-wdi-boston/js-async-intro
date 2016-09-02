@@ -18,17 +18,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+  The event loop is the means by which asynchronous functions get passed into
+  the call stack from the queue.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+ Sync only executes one operation at a time in in a specific order.  Async can
+ send functions into the call stack as soon as they are completed, and slow
+ processes won't hold up the entire stack.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+ Benefits are running multiple processes at once and fewer hold ups.  Some
+ disadvantages include being expensive from a memory stand-point.
 ```
