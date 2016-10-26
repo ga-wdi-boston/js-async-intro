@@ -19,17 +19,25 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is what pushes evnts/tasks from the Queue to the Stack. It keeps tasks lined up in the order it recieves them, and then pushes them one by one to the stack, when the stack is empty.
+
+Source: the video linked above.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+executing tasks in sync is to execute them one at a time, waiting for the previous one to end - every time.
+Executing tasks asychronously starts and runs tasks along side other tasks.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+async:
+Some benefits are that a slow task, or a task with a timer can be run without holding up other tasks.  By putting the webapi to work as well, that can help speed things up. It may allow for easier use of multiple CPUs?
+
+some disbenefits are that it may effect the order in which error codes are registered which may lead to confusion. It may make the system harder to maintain or less reliable.
+
+
 ```
