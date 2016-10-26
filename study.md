@@ -19,17 +19,30 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+an event loop is when javascript executes code upon something it is expecting or
+an event that it was likely waiting for. Upon witnessing an event it executes some
+function or action
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+sync is when a task is executed right as it is received, like getting a glass of
+water as soon as I ask you for it.
+async is a task is put on hold until an event or something calls it. Like say,
+I have water at my table, get me my bottle of wine as soon as I order wine and
+already have water at my table could be an example of async, because not everyone
+will get wine, but if someone orders wine, you first get them water, and then
+get wine once water is on the table. I worked at a fine-dining restaurant so, I
+am kind of trying to relate to that.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+the advantage could be you could do more than one thing at once.
+The disadvantage could be if the command waiting to happen takes to long,
+then it could freeze up what the client is trying to do.
 ```
