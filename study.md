@@ -19,17 +19,30 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is more like a gate than a loop. The event loop puts pressure
+onto the bottom of the stack, and if the stack is empty, the gate is allowed to
+open and put the first thing from the task queue onto the stack. Anything can
+be passed to the task queue but ideally it is reserve for slower processes so it
+doesn't slow down your stack. The combination of the Web APIs and the task queue
+and the event "loop" is what makes an actual side chain loop.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Synchronus functions are called and compiled immediately, where asynchronus
+functions are called  but not compiled immediately, they are "put on hold" so to
+speak, so that the faster functions can be compiles first.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async is great for slower functions, since they can be "put on hold" meaning
+they wont slow down the browsers speed waiting for a response. Instead, the
+sync functions can flow normally until the async functions are called back!
+However issues can arise when "callback hell" is created from flooding the
+task queue with slow async functions. The task queue will be taking functions
+faster than it is pushing them to the stack, creating a big backup in the
+browser. 
 ```
