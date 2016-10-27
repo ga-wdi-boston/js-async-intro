@@ -19,17 +19,28 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop organizes a queue of asynchronous callback functions. In essence, the event loop waits until the call stack is empty, then pushes one function from the queue to the call stack so it can run/be called.
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Sync, or synchronous, carries tasks to completion and waiting for each call to process before moving on to the next one. On the other hand, async or asynchronous sort of allows multiple things to happen at once, as asynchronous task can be initiated and then put aside until a later date while getting started on the next task.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Pros:
+
+High-priority functions can be prioritized as slow/low-priority functions can be kept from running until the higher-priority ones have been executed
+
+Multiple threads of code can be run somewhat simultaneously. Although there is still
+only one stack, the event loop lets us keep a queue of function calls that are separate from the browser's running stack.
+
+
+Cons:
+
+Async is more complex since an embedded callback function is needed to delay a
+function's execution, meaning that our code could be harder to read/debug if we have to write several callback functions at a time.
 ```
