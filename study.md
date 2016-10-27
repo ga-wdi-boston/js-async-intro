@@ -19,17 +19,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop also known as the main loop is the main place where events are
+controlled. After the initial event, the event loop dictates when and what events
+will follow
 ```
 
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Still did not understand it all the way through but my best guess from the readings
+is that sync is strictly code being processed from one line to the other while
+async lets codes go into multiple lines and still processed
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Not too sure on this one
 ```
