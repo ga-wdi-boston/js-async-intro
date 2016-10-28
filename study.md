@@ -19,17 +19,27 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works?
 
 ```md
-<!-- your answer here -->
+The event loop is the "to-do" list for keeping track of event order. It's kind of like an event manager.
+The event loop invokes the call-back function too.
 ```
-
+Used required readings and google searches.
 In your own words, describe the difference between sync and async:
 
 ```md
-<!-- your answer here -->
+Synchronous functions are basically single-file, where it's one at a time happening and can't be otherwise.
+They happen continously over time.
+Asynchronous functions can be put on hold and have other things happen before they're fully completed
+
+Used required readings and google searches.
 ```
 
 What are some benefits and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Benefits: They provide better user experience when you have data-fetching or heavy processing within
+an application.
+
+Disadvantages: They're complicated to understand / implement.
+
+Used required readings and google searches. 
 ```
