@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is a process that handles functions processed through web apis to prevent web page slowdown on the front end.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync places everthing in one big stack to be executed one after the others. Async allows the offloading of certain tasks to other services to prevent the stack from being blocked.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+While async does allow for a faster, smoother front end experience, values returned from async functions will not always be accesible right away making them harder to work with. Aditionally, the event que can get congested just as the stack can so it is important to think about how much data is offloaded.
 ```
