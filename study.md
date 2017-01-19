@@ -20,7 +20,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+A loop that continues to run regardless of a possible error and it stores
+information before being released into the code.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +29,11 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+If you execute code synchronously, you will wait for whatever it is to finish before
+moving on to another task. If you execute code asynchronously, you can
+move on to another task before it finishes.
+
+www.stackoverflow.com
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +41,8 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+I feel that being able to accomplish multiple task at once with async is
+beneficial to the user, executing different code all at once. It could be a
+disadvantage because things could go wrong when trying to execute multiple tasks
+at once and not being privy to each task because of having more than one task.
 ```
