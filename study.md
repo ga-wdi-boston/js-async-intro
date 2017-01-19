@@ -20,7 +20,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+Javascript engine executes the functions available in the call stack. If there
+is any callback function, it is first loaded into the event table, and when it
+is ready to be executed, it is moved to the event queue.
+If teh callstack is empty, the callback functions in event queue will be
+executed next. This process of listening to all these tables and queues are
+handled by the event loop.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +33,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync is a sequential flow of execution of functions.
+Async functions are not a blocking code, which means it gets executed later.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +42,9 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Benefits:
+Since the callback functions are not executed until thye call stack is free, it
+is not a blocking code.
+Disadvantage :
+The order in which asynchronous functions are executed cannot be guaranteed.
 ```
