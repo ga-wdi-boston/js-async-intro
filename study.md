@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is a browser processing tool for executing queued events passed to it from a webAPI handling some process. It works by passing the wueued event back into the stack (a queue list in itself) which then executes the process in the browser.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync refers to the way in which the stack handles processes. In a sync modle, these events are handled in the order in which they are returned if operating on a single string (FIFO). Async is a way in which to process events in a dispursed manner, outsourcing the process to another location in order to proceed with the next stack item.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Benefits: allows for speedier runtime environments and more responsive UIs.
+disadvantages: Things you send to be processed may not be returned in the order in which you would like them to be returned and executed.
 ```
