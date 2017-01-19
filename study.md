@@ -19,7 +19,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 In your own words, describe the event loop and how it works.
 
-```md
+```
+The event loop is...ok, so you're at an amusement park, you're in line for the rollercoaster.  Rollercoaster runs, does its thing, people get off, gates open and next people get on, rollercoaster runs, does its thing, people get off, gates open and new people get on, etc etc.  The event loop is the gates, allowing people to do what they are there to do, ride the rollercoaster.  Too many people get on at once, bad things happen, the event loop holds people (tasks) back.
 <!-- your answer here -->
 ```
 
@@ -28,6 +29,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
+Sync handles one operation at a time, without multi-tasking.  Async handles one operation at a time, WHILE multi-tasking.
 <!-- your answer here -->
 ```
 
@@ -36,5 +38,8 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
+Advantages are obvious, it doesn't tie up your resources waiting for code to finish.  The only disadvantage that I could find was that it is ore difficult (impossible?) to determine/guarantee the order in which code will execute in certain circumstance.
+
+cite:https://www.quora.com/What-does-it-mean-that-Javascript-is-asynchronous
 <!-- your answer here -->
 ```
