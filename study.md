@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!--The event loop allows you to side bar and que timed/slower resolving events in order to keep the stack clear for quick resolving parts of your code to resolve. As slower resolving parts of your code that enter the stack are called upon they're put in a task que, and when they stack is clear they're called to resolve. -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!--Sync is when things execute in a concurrent timeline.  Async is when things sort of don't happen in concurrency. It splits your executables into multiple threads. The quick resolving items in the stack will resolve as they come, but things that would block or take longer are qued in a task que. When the stack in cleared javascript will look at the que and resolve what is in the que until something else comes into the stack. Basically it will only resolve the other things in the que when there are no longer things to do in the present stack. This means you can not count on when those things will resolve. -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- Async is great for not blocking up the que with things that take longer to resolve and for allowing javascript to run multiple things at once to speed up the process. The major negative part, is when writing code to include async returns you can not count on when they will resolve. This is because javascript will only attempt to resolve them when there is nothing else left in the main stack.  -->
 ```
