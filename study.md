@@ -20,7 +20,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is something that monitors the stack and the queue. When there is something that it waiting to be run in the queue and the stack is empty, the event handler moves that something into the stack.
+
+resources used:
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +32,14 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+In general, javascript can only process one piece of code at a time. With sync javascript has to wait for the result of each process before it can move on to processing the next piece of code.
+
+With async, javascript gets help from apis and the queue, so that it can process the next piece of code while the first piece of code is being processed, somewhere else, and then javascript will be notified when the result from the first piece of code is ready.
+
+resources used:
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+https://www.codeschool.com/blog/2014/10/30/understanding-node-js/
+https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +47,10 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async allows your code to be processed more quickly, but you can still have issue with your browser being stuck trying to render new pages if there are too many returns on the queque without adequate delays to let the page re-render.
+
+resources used:
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+https://www.codeschool.com/blog/2014/10/30/understanding-node-js/
+https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
