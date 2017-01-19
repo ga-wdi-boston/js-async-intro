@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is how javascript decides what to do next. Since it can only do one thing at a time, it sometimes puts off longer tasks until the quicker or more urgent ones are done. Or until it gets a response from another computer.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync is when you do one thing at a time, strictly. So for example, if you request info from a server, you then just have to wait until the server responds before you can do anything else. Async is when you can put tasks on the back burner, so like when you request something from a server and while you're waiting for a response, you finish loading a file on your own machine.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async prevents long tasks from blocking the queue, so you can do other stuff while you wait for long tasks to complete. However, it means that those long tasks can build up themselves and you end up in callback hell, with way too many things you're waiting to do.
 ```
