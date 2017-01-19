@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop organizes callback functions and lets them know when they should be run. Essentially the call stack is what dictates whether or not a callback function can be run and the stack has to be empty for a callback function to run. The event loop will look at the stack, see its empty, and say the stack can run
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync is like basic JS which means one thing can only happen at once and it has to happen in order. The order in which these functions is run is also on the call stack.
+
+Async utlizes web APIs and pushes functions to them. The way I understand it is that this is useful for long functions.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +38,8 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The benefeits of async is that it allows longer functions to be "set off to the side" while the rest of the stack can perform the necessary tasks.
+
+
+This may be subjective for disadvantages but callback functions seem to make everything more difficult(at least in my brain) which would make async harder to troubleshoot.
 ```
