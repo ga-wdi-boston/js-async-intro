@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+An event loop runs a line of code when the event is called.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync is when function run at the time of page load. With Async functions will
+wait to be called by some event.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +37,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Benefits of async are that it lets the user interact with the website without
+having to reload the page everytime. Disadvantages are that the page load could
+be slower than sync.
 ```
