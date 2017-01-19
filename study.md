@@ -20,7 +20,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!--
+The event loop determines if it is appropriate to move a task from the task queue to the stack for processing. The event loop determines this by first looking at the stack and then looking at the task queue. If the stack is clear, the event loop then takes the first task on the task queue and moves the task from the task queue to the stack (which then runs that task). Tasks are added to the task queue after being completed by the web API.
+
+Additional Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+
+ -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +33,12 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!--
+Synchronous Task: A task that will occupy the handler continually until that specific task is completed. Regardless of how long it takes that task to be completed, the event handler will wait to move forwards until that task is completed. Synchronous functions are conceptually linear, they require that all information is available in order to move forwards (i.e. they cannot start a task and wait for it to be completed).
+
+Asynchronous Task: A task that can be initiated and moved past while it is being processed. After the task has been processed, the task's completion event will be triggered and will let our JavaScript know that the task being processed is ready to be used.
+
+-->
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +46,13 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!--
+Benefits:
+  1. Reduces the waiting time associated with slow resources.
+  2. Optimizes computing time by initalizing processes, leaveing them to complete, and retreiving them when ready instead of waiting the whole time and not moving forwards in the mean time.
+  3. Increased capabilities when nesting functions (we have can save the processing time associated with certain tasks until absolutely necessary).
+
+Disadvantages:
+  1. The dangers of callback hell: enough callbacks and code is almost impossible to follow.
+ -->
 ```
