@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!-- When a user request information they are put in a queue to be processed. Once that command is placed in the queue more commands can be retrieved and submitted to the queue to be proccessed in the order that they were recieved. -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!-- Sync: Loading one task at a time. Another task cannot be loaded until the first one has been completed. Async: Multiple tasks can be loaded without completion. -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- You can overload the browser if the queue get too full casuing things to run slowly or crash. -->
 ```
