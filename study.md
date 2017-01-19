@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop invokes the callback and the callback functions are passed as arguments until the I/Os are complete and the return value is available, which then gives an event.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+synchronous tasks will take precendent until the task at hand has completed, then the next task can be started. Each step has to be completed one after the other but another step cannot start until the first has finished. synchronous functions block the even loop so they should be avoided.
+asynchronous tasks can start and then be put aside while other tasks are started and completed. These should be used since they are more efficient.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +37,12 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+advantages:
+clearer and cleaner
+
+
+disadvantages:
+errors are easier to miss
+callback hell => messy code
+functions that are asynchronous don't return right away
 ```
