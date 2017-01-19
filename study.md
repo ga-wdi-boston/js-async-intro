@@ -20,7 +20,16 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is how javascript allows you to do multiple things at once.
+This is instead of having to call a function, wait for completion, and then
+continue to the next action. For example, a webapi (like timer) is called and
+completes shortly after. Once complete, rather than jump (perhaps into the middle)
+of the stack - the callback moves to the task queue. The event loop is a simple
+but important piece of this. The event loop will keep checking to see if the stack
+is empty - and if it is - the event loop will push the first item from the task
+queue into the stack.
+
+Source: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +37,11 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync are tasks that are performed and must be completed before continuing.
+Async tasks are those that can started and then move onto the next one -
+checking in later on the result (callback).
+
+Source: https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +49,11 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The main benefit is that you can significantly speed up the overall
+run time of your app by running tasks asyc. The downside is you
+are introducing a significant degree of complexity (e.g. callback hell).
+That being said, there are some mitigation strategies you can use
+to help make the complexity manageable (e.g. promises).
+
+Source: https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
