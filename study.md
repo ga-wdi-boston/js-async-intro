@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+Node uses an event loop for scalability, instead of processes or threads. In contrast to other event-driven servers, Node event loop does not need to be called explicitly. Instead callbacks are defined, and the server automatically enters the event loop at the end of the callback definition. Node exits the event loop when there are no further callbacks to be performed.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+synd is doing one thing at a time abd async is doing multiply thins at the same time
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+advantage : run code better and to multitask
+disadvantage: callback hell makes problems
 ```
