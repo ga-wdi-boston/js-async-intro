@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!-- The event loop is when a current function runs in task queue and event loop checks if stack is empty then allows task in through queue to stack, where the job gets done.  -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!-- Sync is when callback runs in order and async does not run in a specific order. -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- Advantages: Get things done when the stack is free.  It doesnt run slow.
+Disadvantage: You may not know what order the events get executed. -->
 ```
