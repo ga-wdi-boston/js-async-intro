@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+An event loop pulls the first item in the task queue and moves it to the stack when the stack is empty.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync is step by step, one line at at time. Async will allow things to happen out of order or at the same time so you don't know when they will finish.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
++ Lets things happen out of order
++ Doesn't block the browser
+- Don't know when things will execute
 ```
