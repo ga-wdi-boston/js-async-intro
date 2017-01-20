@@ -20,7 +20,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is telling the selector when it wants to do something.
+Example: when someone clicks on a link, it opens to another page.
+This was from a recollection of today's teaching.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +30,12 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+When you sync, the process of the sending and receiving is blocked until the operation
+is fully completed as for asyncing is when it plays the role of initiating the operation
+whilst not blocking it. Execution of the operation through asyncing is immediate.
+ /* not 100% sure about this */
+
+source: http://www.cs.unc.edu/~dewan/242/s07/notes/ipc/node9.html
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +43,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+With async, it's immediate and quicker in regards to processing the operation. /* pro */
+With async, less functions for coding purposes; it is a cleaner format. /* pro */
+/* not sure about the negatives */
 ```
