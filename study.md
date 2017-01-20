@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is a programming tool that uses events in a program. It makes a request to a provider that then calls an event handler, depending on the nature of the request.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Asynchronous requests are better than synchronous requests because they are better performing. Synchronous requests tend to 'block' the execution of code because it runs one thing at a time. Asynchronous requests are better because it can run multiple lines of code.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+advantage: faster, run code better and more efficiently
+disadvantage: callback hell, it gets messy, deal with it
 ```
