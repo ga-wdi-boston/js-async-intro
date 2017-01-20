@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+JavaScript is run line by line, as a result of this browser will be runing the code acording the stack structer. However, when systems tyries runing a web Api it gets out of the stack and gets into que. However, while this process is happening browser does not stop runing the code and runs the following code. When our stack is clear then the code in the que will be run by the browser.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync is doing one thing at one time and async is doing mutlip;le thing at the same time.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The advantage of astnc is when we have code which needs time to be executed won't be blocking our site because it will be getiing in to que. 
 ```
