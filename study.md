@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The 'event loop' is responsible for invoking callbacks. In node.js, as a primary example, code execution is reliant on event loops acting as listeners for events(or changes in the state), as can be seen in the DOM, and loop to callback functions that are executed when a specific event happens. Basically, I am thinking of events as user interaction with a web app/page and the event loop is the response(in the form of callback methods) to this user interaction.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+When using a query to retrieve data, sync is when the command is not executed until each operation in the query has been executed. Async is when operations are all executed at once, without waiting for the query to finish retrieving information from the database.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+There are both advantages and disadvantages to async. Advantage wise, async allows for more immediete response, so reueste information is recieved much quicker. Continuing to work through code  whilst retrieving data might be more efficient, but it also, at least from what my novice developing skills have determined, seems to create harder to read code. Though this will likely change with time, async's use of callbacks and their given valid arguments seems like a lot to keep track of when I am trying to understand the proper pattern that facilitates this system in the first place. Node.js 'apparently' helps make async code flow in a more readable fashion.
 ```
