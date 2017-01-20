@@ -20,21 +20,20 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
-```
+The event loop is what passes setTimeOut functions into the stack after the web API has ran it's set time and once the stack is freed up.```
 
 ## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
-```
+The difference is in how they are proccessed which differs in timing & efficiency which in turn can be felt in a user's experience.
+Sync- JS runs code one line at a time
+Async- Js runs code one line at a time BUT has the help of web APIs and event loop to make it more efficient by making things occur out of order.```
 
 ## Async Advantages and Disadvantages
 
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
-```
+The good thing is that Async will create a more user friendly experience but the problem is that if the event loop gets back up (because it has to wait for the previous event to occur before one can get passed to the stack), then it's jammed up and things aren't time properly.```
