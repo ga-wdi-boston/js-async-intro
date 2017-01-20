@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!-- The event loop is when there functions are put into a call stack because only one function can be executed at a time. other functions are put into a queue to be executed, as the stack functions are executed the queue loops the ones that havent been called yet to the stack.-->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!-- sync would be things running concurrent with eachother, async means that one thing at a a time runs but while we are waiting for a function to finish we can execute another function.  -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +36,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- advantages running things faster and smoother
+dis advantages not knowing exactly the order or timing of functions to finish executing-->
 ```
