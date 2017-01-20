@@ -20,7 +20,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+An event loop is important in explaining the order in which functions are run in the browser (which impacts the speed of calling these functions).  It can be thought of as ordering tasks in a to-do list.  Because a browser cannot run multiple functions at the same time (i.e. single threaded), these functions are put in a callback queue.  Then, the event loops moves these functions in a specific order to the call stack, which runs the code.  With code that has a function run for an event that can occur multiple times (e.g. 'scroll'), the function is run multiple times.  The callback queue can be flooded.  It is at this point that the operation (i.e. synchronicity and asynchronicity) comes into play (see below).
+
+Source 1: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+Source 2: https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
+
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +32,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+For sync, rendering is blocked as the code is being executed.  This is because the render queue has to wait until the call stack is cleared.  Therefore, rendering is blocked which slows does the execution of code.
+
+For async, rendering can take place in between functions running in the call stack.  In other words, the render queue is not waiting for the call queue to clear before rendering.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +42,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The advantage of async is that functions can be rendered as the code is being run (rather than waiting until the call queue is cleared).  This speeds up the process of rendering code.
+
+One disadvantage of async is if you want all the code to run before rendering occurs.  For instance, if you want a page to entirely load before javascript is rendered.  Here, async, which renders along the way, is a disadvantage.
 ```
