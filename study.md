@@ -20,20 +20,20 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
-```
+The event loop controls the order in which single functions are processed between the client and the server.
 
 ## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
-```
+Async can only one a single string at a time and sync can run multiple
 
 ## Async Advantages and Disadvantages
 
-What are some advantages and disadvantages of async?
+Can control the flow of functions if coded promise is used, allows your code to multi task.
+Can cause problems if it's not planned for properly and your code gets stuck waiting for info,
+or functions don't run in the order that you planned on from the stack.
 
 ```md
 <!-- your answer here -->
