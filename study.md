@@ -20,7 +20,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop handles the movement of callbacks from the callback queue into the stack, and prioritizes browser rendering over the callback queue where applicable.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +28,10 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync operations are independent operations that are run in parallel.
+
+Async is a method which simulates having multiple threads in order to avoid blocking the event loop by filling the stack with many slow processes.
+When the slow processes sent out are done, they return a callback function to be executed by the stack.
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +39,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The principal advantage is that by keeping the stack clear of slow events, the browser can render much closer to 60fps.
+
+Disadvantages include the fact that you cannot be certain when an async callback will be run, due to the nature of the event loop, and the fact that handling a large number of async callbacks can be difficult to read and implement for the developer.
 ```
