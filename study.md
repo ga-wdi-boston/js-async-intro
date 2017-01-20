@@ -19,22 +19,17 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 In your own words, describe the event loop and how it works.
 
-```md
-<!-- your answer here -->
-```
+The event loop system that manages callback functions stored from the web API. When a callback function that has a asynchronous feature is executed it gets moved from the stack to the web API ultimately to the callback queue where it is stored later to be executed. When the all lines of code have been executed and the stack is empty the event loop will select the first element stored in the callback queue and put it on the stack where it is executed. This process will continue until there is nothing left in the callback queue.
 
 ## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async.
 
-```md
-<!-- your answer here -->
-```
+Sync is a system of code execution that will execute each line of code one at a time and waits for the API call to return before continuing. Until a response is received fro the API the application will not continue until the previous code is executed.
+Async is where execution continues in a program and the program does not wait for the API call to return from the server. This is done by placing a callback function towards the end of the code. This allows for more a user friendly and fluid UI as the user is not constantly waiting for lines of code to be executed.
 
 ## Async Advantages and Disadvantages
 
 What are some advantages and disadvantages of async?
 
-```md
-<!-- your answer here -->
-```
+The main advantage of async is that the user experience is more fluid as the program or site is not held up waiting for each line of code to executed. A disadvantage of async is that the code can become very complex as the use of callback functions are essential. 
