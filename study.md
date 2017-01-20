@@ -20,7 +20,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+Javascript is 'single threaded', so only one task at a time can be executed.
+The event loop checks functions in the runtime stack and in the queue and pushes events from the queue to the stack when the stack is empty.
+
+I used: https://www.youtube.com/watch?v=vMfg0xGjcOI
+https://blog.risingstack.com/node-hero-async-programming-in-node-js/
+https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
 
 ## Synchronicity and Asynchronicity
@@ -28,7 +33,13 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronous tasks are events that are blocking. When events need to be called in strict order, they are synchornous.
+Async is when events are not blocking other events from happening. If an event takes time to complete (like a timer function), other events can happen in the mean time.
+
+I used :
+https://blog.risingstack.com/node-hero-async-programming-in-node-js/
+https://www.codeschool.com/blog/2014/10/30/understanding-node-js/
+
 ```
 
 ## Async Advantages and Disadvantages
@@ -36,5 +47,8 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async allows functions to be executed in the fastest and most efficient way possible in many circumstances because they don't allow any time to be wasted.
+Using them too liberally can make code look complicated and hard to decipher. We can have something called callback hell if too many functions are nested within each other.
+
+I used: https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
