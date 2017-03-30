@@ -29,7 +29,12 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!-- Using readings/videos required for this homework and trying to remember diffs b/w
+heaps/stacks (man, that was a long time ago), I understand the event loop
+to be a single-dimensional data structure that handles commands one at
+a time.  Each line of code is loaded onto a stack and popped up as it is
+handled... LIFO and this ends up taking some time because the prior command/task
+needs to finish before the next one begins (--and who has time for that?!) -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +42,16 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!-- sync is like single file line for groceries, no skipping lines, in
+time-order (need tofinish one thing before beginning anothoer) and async is more
+akin to a bunch of self-service checkouts-many tasks occuring same time and
+concurrently
+
+ this site was also helpful:  http://www.cs.unc.edu/~dewan/242/s07/notes/ipc/node9.html
+
+
+
+   -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +59,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- advantages of async:  time savings and disadvantages:  complexity
+(figuring out more complex method of implementation) and maybe memory?
+    -->
 ```
