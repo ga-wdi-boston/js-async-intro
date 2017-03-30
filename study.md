@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is code being processed.  request:response request:response
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronicity is request wait for response (daisy wheel), another request wait for response (daisy wheel again.)
+Asyncronicity is ability to handle multiple requests at the same time in an efficient manner.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +46,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages are speed and effieciency.
+Disadvantages are organizing controls to run things in a logical order.
 ```
