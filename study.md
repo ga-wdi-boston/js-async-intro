@@ -28,7 +28,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 
 In your own words, describe the event loop and how it works.
 
-```md
+`md
 "The Event Loop is a queue of callback functions."" To me, this means that javascript executes a function, and it if is not being used, it is placed into a queu and waits/listens for an action to execute.
 
 http://stackoverflow.com/questions/21607692/understanding-the-event-loop
