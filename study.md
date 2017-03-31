@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is the mechanism through which JavaScript manages tasks to be completed. Because the language is single-threaded, only one block of code can be executed at a time. When a block of code with a callback is read, it is "placed to the side" in an event queue. This ensures that the browser doesn't get hung up on a block of code, preventing the rest of the program to progress. When the program finishes and the "stack" is cleared, the item at the top of the even queue is the next thing to be processed.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Syncronous code is exectuted in the order it is written. One block of code will not execute until the block of code before it completes. Asynchronicity allows for multiple blocks of code to run in parallel, or to set code aside for processing later. Code written using a non-blocking model allows for code blocks with callback functions to be executed at a later point or run in parallel if the task is taking a long time to complete. This allows the browser to move on to the next code block without getting hung up.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +45,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages - A user can continue to interact with a page if a particular request is taking time to process. If a button click makes a call to the server and it's taking a long time to pull back the request, the user can continue to interact with the application.
+
+Disadvantages - You cannot guarantee events will happen in the order in which you wrote them, or the exact timing of an event. When events with a set delay are queued, the set delay is more like a "minimum expected delay". If there are other events queued up ahead of the event with the delay, it will take longer for the event to complete.
 ```
