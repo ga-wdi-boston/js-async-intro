@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+When the call stack is empty ,the Event loop passes task from the task queue into the call stack.  These task were originally passed from webAPIs into the the taskqueue and they are executed sequentially.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Syncronous code is javascript that is written and executed in order.  The code remains in the call stack and is executed in order only once the previous action has been completed.
+
+Asyncronous code is the use of web APIs or feature browsers to delay execution of a task.  This allows you to delay execution of a function until after the other tasks in your call stack is clear.  This can help you avoid locking up your website.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +47,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+An advantage of async is that it allows the browser a chance to redraw and not lock up the website.  It allows you to execute functions when things are ready allowing you to simulate using Javascript as a multithread language.
+
+The disadvantage is that it can be somewhat complex and messy to implement.  Poorly designed function also can clog up the task queue.
 ```
