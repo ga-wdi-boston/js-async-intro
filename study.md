@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+When we run our code, it executes by running one piece of code at a time through the stack. However, if there is any sort of delay put onto a piece of code, this causes it to be pushed to the web API and then eventually to the queue. Once the stack is done executing the code within the stack, the event handler will then pull whatever piece of code is left waiting in the queue and execute it at this point.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+With synchronous code, the code executes line by line in order, with only one thing happening at a time. With asynchronous code, code may execute out of order or concurrently in separate threads.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +45,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+An advantage to asynchronous code is that you can manipulate the order in which your code executes with the queue and event loop. It also allows multiple things to execute independently which can speed up the running of your code. I imagine a disadvantage would be that it can sometimes be difficult to keep track of the order in which code is executing and make sure things happen when they should be.
 ```
