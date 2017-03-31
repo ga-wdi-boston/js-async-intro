@@ -28,16 +28,23 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 
 In your own words, describe the event loop and how it works.
 
-```md
-<!-- your answer here -->
-```
+`md
+"The Event Loop is a queue of callback functions."" To me, this means that javascript executes a function, and it if is not being used, it is placed into a queu and waits/listens for an action to execute.
+
+http://stackoverflow.com/questions/21607692/understanding-the-event-loop
+ ```
 
 ## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronicity: javascript executes a script, in order and waiting for execution to complete before moving on. A while loop is a good example.
+
+Asynchronicity: code is uploaded, and queued. It gets executed once an event of a function execute to trigger an event.
+
+http://stackoverflow.com/questions/16336367/what-is-the-difference-between-synchronous-and-asynchronous-programming-in-node
+
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +52,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+advantage: Asynchronicity allows for dynamic web experience.
+Disavantage: due to threading model. JS is single thread. Keeping units small helps to make your code more effeicient.
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
