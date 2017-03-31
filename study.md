@@ -29,7 +29,9 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+Callback functions go into a queue and are processed in order unless there are asynchronous calls.
+If a callback is asynchronous, it will fire off at the time designated in the script.  Other callbacks
+fire in order before or after the asyncbronous callback based on timing.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +39,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Asynchronous callbacks are fired off at a specific time by design, and you can move onto execute sync calls while that happens.  Sync calls execute one by one.
+
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +48,10 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages:  You don't have to wait for it to finish.  Because there is no blocking, other resources
+can run.
+Disadvantages:  Heavier overhead.  You can't necessarily predict the response times.  Error
+handling is more difficult.  Apps may be more difficult to design.
+
+https://sites.google.com/site/assignmentssolved/mca/semester3/mc0075/13
 ```
