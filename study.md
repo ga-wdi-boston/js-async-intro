@@ -29,7 +29,9 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!-- It waits until the stack is empty then pulls the first even from the que
+onto the stack.  The que is set up based on devolpers code invoking functions
+like set timer/on click -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +39,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!-- sync code happens in the order it was written, async code may be exectued
+according to different logic -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +48,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- The disadvantadge is that it adds a layer of complexity, the advantage
+is that it gives teh devolper more direct control so they can call
+APIs w/o blocking the user from the website-->
 ```
