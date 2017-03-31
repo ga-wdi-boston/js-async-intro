@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is a holding place for callback functions that have been returned by their enclosing function, but are waiting to execute on the stack. The stack must clear before the the callback is executed.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchoronous refers to code that executes from top to bottom, waiting for completion of one step before proceeding to the next.
+
+Asynchronous refers to the fact that browsers hand off certain functions (passing a callback) to web APIs to process in the background, executing the callback after the background process completes (via the event loop). This can result in your code not executing top to bottom as it is written, which is what asyn refers to.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +47,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The advantage is that the stack isn't bogged down by slow, blocking functions (like long while loops, or file download).
+
+Disadvantage is that you can't always know in which order your code will execute, which could make your website behave strangely and be hard to debug. 
 ```
