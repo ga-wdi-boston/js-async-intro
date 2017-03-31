@@ -29,7 +29,11 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is a place where a callback gets placed once a response is
+recieved from a async request.  The callback then will be pushed to the stack
+once it is empty, where it will then be executed.
+https://www.codeschool.com/blog/2014/10/30/understanding-node-js/
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +41,14 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronicity is the process of putting(pushed) work on a call stack in the order in
+the calls happen. Once a call is done it is removed(popped), removing the next
+call on the stack once it executes. This process continues until till there is
+no calls remaing.  This is a single threaded system, potentially slowing down
+making a page seems slow, while it is processing all the calls.  In contrast
+asynchronicity calls are put on a stack and are executed on individual threads
+letting the other calls continue to be processed at the same time.
+https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +56,12 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+The main advantage is allowing several things to happen at the same time and not
+blocking execution of other calls. A disadvantage is if several calls are
+executed at the same time you cannot guartenend when the various calls will return,
+if your code is dependent on one call finishing before another you will most
+likely have a bug.  We accomplish async via JS, if it is turned off in a browser
+we can not use this feature.
+
+http://www.jscripters.com/ajax-disadvantages-and-advantages/
 ```
