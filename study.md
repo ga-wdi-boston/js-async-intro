@@ -29,7 +29,9 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop monitors the stack and task queue and invokes the callbacks in the queue/moves the callbacks to the stack when the stack is empty.
+
+Source: referenced the required readings and videos
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +39,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronous means one request can be handled at a time and cannot move on to the next request until the current request is complete. Asynchronous means a request can begin and the program can move on to another request before the initial request is complete.
+
+Source: referenced the required readings and videos
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +49,7 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
-```
+Advantages: program doesn't have to wait for request to complete before moving to another request, program can process many requests, parallel threads,creates a more responsive user experience
+Disdvantages: time sensitive processes may not be ideal for async processes, callbacks may get backed up in the queue, "callback hell" (nested callback functions)
+
+Source: referenced the required readings and videos, http://stackoverflow.com/questions/25098066/what-is-callback-hell-and-how-and-why-rx-solves-it,
