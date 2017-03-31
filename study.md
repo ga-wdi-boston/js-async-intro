@@ -29,7 +29,10 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+-event loop- looks first to the  call stack for "work", if the call stack is empty then the event loop will look at the task queue for work. If there is something on the task queue, the event loop will push that thing onto the stack so it can be ran.
+
+-You can set something to time 0, so that you are immediately adding something to the task queue and waiting to run that piece of code until the call stack is cleared.
+
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,13 +40,21 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronous code is code that executes one block after the other. Can't do anything before the previous code completes
+
+Asynchronous code is code that can be accessed or ran later i.e. out of order.
 ```
 
 ## Async Advantages and Disadvantages
 
+
+
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantage- website will operate more seemlessly to end user.
+
+
+
+Disadvante- more complicated for coding. Potentailly to run into concurrency issues. Front end could be trying to call an object before the backend is done updating it, so the front end would display the wrong info to user. Performance of the backend matters.
 ```
