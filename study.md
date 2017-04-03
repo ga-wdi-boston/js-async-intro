@@ -29,7 +29,9 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is the the management of tasks a program executes that, when illustrated, has a loop like
+nature. the loop puts callback functions in a task que and when the task in the stack is complete, the task in the cue
+goes to the stack. When that is implemented the next task in the que gets pushed to the stack. So on and so forth..
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +39,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+JS is a single thread programming language meaning one thing is implemented at a time, which is essentially 'sync'. Even
+if called by the same function or event handler, only one thing can happen at a time. Async can in essence run multiple
+things by using callback functions to create sort of a cue of initiated tasks, and then implement them when called.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +49,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+code can run out of order 
 ```
