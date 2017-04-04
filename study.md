@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+As request comes in a JS engine executes the code step by step. The first two calls are synchronis by definition. It becomes an async execution when it gets to the setTimeout method. JS returns from it and continues execute. Once it becomes asynchronis, it is defined as an event loop.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+ synchronous task will run continuously until completion vs asynchronous tasks can be initiated and set aside until a later time (via timeouts) while the browser is able to move forward with further tasks. It prevents the browser from temporarily "freezing."
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +45,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Asychronus tasks allow the browser not to have to reload the entire page when only a bit of data on the page has changed. In synchronous programming, each step is performed one after the previous one is finished executing. This may be necesary in some instances.
 ```
