@@ -29,7 +29,8 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+When your code runs, the event loop monitors the call stack (a data structure that informs JS where we are in the program) and the task queue. Once JS finishes running tasks in the call stack, the event loop will take the first callback on the task queue and push the task to the call stack so that it can be run. It's important to note that the event loop cannot push the callback onto the stack until the call stack is clear.
+Resource: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +38,9 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronous is when different tasks run on a single thread, one task running after another finishes in sequence. In contrast, asynchronys code is when tasks run independently of other tasks, where each can be run using different threads without having to wait for other tasks to finish. The advantage of asynchronous code
+is that the current flow of operations will not be interrupted by code in queue.
+Resource: https://www.youtube.com/watch?v=vMfg0xGjcOI
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +48,10 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+It's hard to reason when each of the asynchronous code will execute.
+Asynchronous code will not necessarily run in the order in which you wrote them,
+because execution depends on how fast the files load from the server.
+Resources:
+https://www.quora.com/What-does-it-mean-that-Javascript-is-asynchronous
+https://www.youtube.com/watch?v=vMfg0xGjcOI
 ```
