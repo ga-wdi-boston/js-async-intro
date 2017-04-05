@@ -31,13 +31,13 @@ In your own words, describe the event loop and how it works.
 ```md
 <!-- your answer here -->
 ```
-
+The event loop is a "line" of callback functions. The event loop is not triggered until the asynchronous ("not in order") code has run.
 ## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Synchronous code consists of operations that happen in the order you would expect, or what humans would generally refer to as "in order". The outcome of synchronous operations is dependant on various funtions, so the returns may happen in various order. <!-- your answer here -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -46,4 +46,4 @@ What are some advantages and disadvantages of async?
 
 ```md
 <!-- your answer here -->
-```
+```I need more time to read up on the answer to this one. I stayed at GA until 7pm and completed the DOM study. I took a spin class at 7:30 and watched the YouTube videos on the train home and while eating dinner (my previous two anwers are based on the videos). I am drained at this point (10:45pm), but I will use my commute tomorrow and my time at GA before 9:00am to complete the readings.
