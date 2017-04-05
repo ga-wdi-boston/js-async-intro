@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+<!-- The event loop is responsible for invoking callback functions and they process the functions one at a time from the task queue. It pushes them onto the call stack to be run by the javascript v8 engine. -->
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+<!-- Sync events - the caller needs to pause to wait for a response. can be cancelled.
+Async events - the caller continues without pausing for a response. can not be cancelled. -->
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +46,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+<!-- As an advantage, the user can continue to interact with the page while async is working. One of the main disadvantages is that async is a lot more complex than sync. More callbacks are required. -->
 ```
