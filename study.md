@@ -30,6 +30,9 @@ In your own words, describe the event loop and how it works.
 
 ```md
 <!-- your answer here -->
+Event loops are the signal for asynchronic code to execute. It will look at the
+stack to see if it's empty. Once it has confirmed it's empty it looks at the queue
+full of asynchornic code to be executed and put them onto the stack to execute
 ```
 
 ## Synchronicity and Asynchronicity
@@ -38,6 +41,12 @@ In your own words, describe the difference between sync and async.
 
 ```md
 <!-- your answer here -->
+Asynchronous is code that is put into a queue that is working in the background
+waiting to be executed AFTER all the other code has been run. Synchronous slows
+down the process because a line of code that take longer to execute, such as
+a network request, needs to be be fully processed and executed before moving on
+to the next line of code
+
 ```
 
 ## Async Advantages and Disadvantages
@@ -46,4 +55,6 @@ What are some advantages and disadvantages of async?
 
 ```md
 <!-- your answer here -->
+Pro: prevents overall function of a webpage from slowing down
+con: can add complexity to code and make it harder to debug? Not entirely sure on this
 ```
