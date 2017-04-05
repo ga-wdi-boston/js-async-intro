@@ -29,15 +29,25 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop waits until the stack is clear and push's a task from the que onto it.
+The tasks on the que are responses to requests we made to an api.
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 ## Synchronicity and Asynchronicity
 
 In your own words, describe the difference between sync and async.
 
+
 ```md
-<!-- your answer here -->
+Synchronous code will block the stack, performing a slow operation, preventing any javscript or operations in the broswer from running until it is done.
+
+Asynchronous doesnt block the stack with slow operations. It would make a request to an API,
+set up a listener and move on to the next piece of javascript. When the API responds the listener
+it calls a function which gets pushed to the stack by the event loop. This leaves space for other things
+to happen while the server gathers the information we requested
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +55,14 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages:
+
+We get to perform multiple operations(threads) at once by communicating with an API. This prevents the
+browser from being sluggish, maintaining a fluid user experience
+
+Disadvantages:
+
+It could slow be slower if we send small tasks to an API to be processed. Tasks that would be quicker to
+perform sequentially without having to wait for a server to respond.
+https://www.quora.com/What-are-the-disadvantages-of-asynchronous-callback-mechanism-on-the-server-side
 ```
