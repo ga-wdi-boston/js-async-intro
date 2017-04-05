@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is what receives information from I/O requests and return events to invoke callback functions.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+They are two different types of functions. Synchronous functions have to finish before a different taks is iniciated. Asynchronous functions can be "put on pause", while they what on a different, third-part information return.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +45,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+While async functions allow you to do multiple taks at the same time and wait on those tasks return to execute the function, they invoke a lot of callbacks and can get confusing to write or undestand.
 ```
