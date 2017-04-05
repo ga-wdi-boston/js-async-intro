@@ -20,7 +20,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 ## Required Readings
 
 -   [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
--   [Understanding Asynchronous JavaScript](https://www.youtube.com/watch?v=vMfg0xGjcOI)
+-   [Understanding Asynchronous JavaScript](https://www.youtube.com/watch?v=vMfg0xGjcOI
 -   [The Restaurant](https://www.codeschool.com/blog/2014/10/30/understanding-node-js/)
 -   [Javes!](https://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/) (until the section on fibers)
 
@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event-loop is a functions callback, listening for events for example click or ready.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sychronous is a task that will run contiously until the task is completed.
+Asyronous is a task that can be started, put aside, and be completed on a later date.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +46,6 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages: Can use connectionless protocols, there is no block, and requests do are not required to target specific servers.
+Disadvantages: Unpredictable reponse times, eroors are more complex, and it's hard to design apps.
 ```
