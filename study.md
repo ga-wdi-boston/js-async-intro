@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop seems to be pretty key for async programming. Because most callback functions need to operate in sequential order, they need to be stored in order for the Js to to execute the asynchronous code
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,7 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync code basically executes one line at a time, going down the list. Async does not do this, and in async code, the code does not necessarily execute in exact sequential order.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +45,5 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+async code does not necessarily adhere to the logic flow we have been covering, meaning that it can execute in unforseen and unintuitive ways. The primary advantage to async is that code executes far quicker, as there are multiple threads handling different elements of the code all at the same time.
 ```
