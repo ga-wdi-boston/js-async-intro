@@ -44,4 +44,4 @@ blocking or synchronicstic code takes all the time and attention of the server a
 What are some advantages and disadvantages of async?
 
 ```md
-The advantages of async are that is allows you continue to use a webpage while waiting for a response from a server or doing some other function that takes a long time.  Without it interactive web pages would move really slowly.  A disadvantage is that it is less clean, and can lead to users being confused about what is happening to their requests and possible resubmitting something many times while they are waiting for it to run.```
+The advantages of async are that is allows you continue to use a webpage while waiting for a response from a server or doing some other function that takes a long time.  Without it interactive web pages would move really slowly.  A disadvantage is that while async code is in the cue you can do anything else with it. Also, it is more complicated than sync, and therefore harder to read and easier to mess up while writing or modifying. ```
