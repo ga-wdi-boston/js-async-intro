@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is something built into the JS engine in Chrome (V8) that takes tasks and puts them onto a stack executes them and then takes them off the stack in synchronous order. It can only do one thing at a time. The way it can deal with code that takes a while to process (blocking) is by putting those tasks in the event queue. The event queue is like a waiting room in parallel to the main callstack. When pieces of slow/blocking code are finished, they can be put back onto the main stack at the next availabale opportunity, or at a specific time that you as the programmer assign.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,11 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Sync represent code/programming that can execute literally one thing at once, in order, without exceptions. If code is slow, the rest of the code behind it has to wait.
+
+Async is code/programming that utilizes parallel threads so that certain processes can operate separately from others. This way, those pieces of code don't have to wait for others, or don't hold up others themselves if they are slow.
+
+Chrome still has a single callstack, but it utilizes these queues/waiting rooms in order to simulate parallel programs.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +49,13 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Advantages:
+-Code is non-blocking/faster
+-Service need not be available when a request is made.
+-Could use a connectionless protocol if necessary
+
+Disadvantages:
+-Response times can be unpredictable, increasing complexity
+-Debugging complexity is increased
+-Harder to read/more complex to code
 ```
