@@ -29,7 +29,7 @@ Asynchronous - operations that may start in a certain sequence and may end in an
 In your own words, describe the event loop and how it works.
 
 ```md
-<!-- your answer here -->
+The event loop is where callbacks are invoked. The event loop will invoke callbacks from the task queue and pass them into the stack when the stack is empty.
 ```
 
 ## Synchronicity and Asynchronicity
@@ -37,7 +37,8 @@ In your own words, describe the event loop and how it works.
 In your own words, describe the difference between sync and async.
 
 ```md
-<!-- your answer here -->
+Async code means the code can be executed at anytime in any order. It often means that there is a signal/event that will trigger the code to execute. Multiple async code can be exectuted in parallel.
+Sync code means the code is executed in sequence. A subsequent line of code will not execute until the preceding code is finished executing.
 ```
 
 ## Async Advantages and Disadvantages
@@ -45,5 +46,8 @@ In your own words, describe the difference between sync and async.
 What are some advantages and disadvantages of async?
 
 ```md
-<!-- your answer here -->
+Async advantages involve the parallel execution of code where tasks can be passed to other task handlers at the same time. It can simplify and streamline complex operations into small pieces.
+
+Disadvantages of async involve unexpected/unintentional layers of complexity if callbacks are not organized/documented proprerly.
+It can lead to unpredictable response times and performance.
 ```
